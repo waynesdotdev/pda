@@ -1,10 +1,8 @@
-import React from 'react'
-
-const ProfileCard = props => {
+const ProfileCard = ({ title, handle }) => {
   return (
     <div>
-      <h1>The Title is {props.title}</h1>
-      <h2>The handle is {props.handle}</h2>
+      <h1>The Title is {title}</h1>
+      <h2>The handle is {handle}</h2>
     </div>
   )
 }
