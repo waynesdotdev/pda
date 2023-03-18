@@ -1,3 +1,4 @@
+import 'bulma/css/bulma.css'
 import ProfileCard from './ProfileCard'
 import alexa from './images/alexa.png'
 import cortana from './images/cortana.png'
@@ -6,7 +7,14 @@ import siri from './images/siri.png'
 function App() {
   return (
     <div>
-      <header style={{ backgroundColor: 'violet', padding: '20px' }}>
+      <header
+        style={{
+          backgroundColor: 'violet',
+          padding: '20px',
+          color: 'white',
+          fontSize: '2rem',
+        }}
+      >
         <h1>Personal Digital Assistants</h1>
       </header>
       <ProfileCard title='Alexa' handle='@alexa99' image={alexa} />

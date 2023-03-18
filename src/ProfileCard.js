@@ -2,10 +2,16 @@ const ProfileCard = ({ title, handle, image }) => {
   return (
     <div className='card'>
       <div className='card-image'>
-        <img src={image} alt={title} />
+        <figure className='image is-1by-1'>
+          <img src={image} alt={title} />
+        </figure>
       </div>
-      <h1>The Title is {title}</h1>
-      <h2>The handle is {handle}</h2>
+      <div className='card-content'>
+        <div className='media-content'>
+          <p className='title is-4'>{title}</p>
+          <p className='subtitle is-6'>{handle}</p>
+        </div>
+      </div>
     </div>
   )
 }
